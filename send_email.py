@@ -14,9 +14,9 @@ def build_html(news_list):
     return html
 
 def send_email(news_list):
-    sender = os.environ["SENDER_EMAIL"]
-    passwd = os.environ["SENDER_PASSWORD"]
-    receiver = os.environ["RECEIVER_EMAIL"]
+    sender = os.environ["MAIL_USERNAME"]
+    passwd = os.environ["MAIL_PASSWORD"]
+    receiver = os.environ["MAIL_USERNAME"]
 
     subject = "📢 每日TOP新闻"
     html_body = build_html(news_list)
