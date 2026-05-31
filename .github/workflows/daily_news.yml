@@ -4,6 +4,10 @@ on:
     - cron: "0 2 * * *"
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # 加这一行就消除警告
+
+
 jobs:
   send-news:
     runs-on: ubuntu-latest
