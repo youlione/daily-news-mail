@@ -22,7 +22,7 @@ jobs:
 
       - name: Run & Send
         env:
-          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
-          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+          SENDER_EMAIL: ${{ secrets.MAIL_USERNAME }}
+          SENDER_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          RECEIVER_EMAIL: youlione@126.com
         run: python send_email.py
